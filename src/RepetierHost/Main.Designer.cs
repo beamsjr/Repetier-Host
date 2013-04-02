@@ -172,8 +172,8 @@
             this.slicerToolStripMenuItem,
             this.temperatureToolStripMenuItem,
             this.printerToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.toolsToolStripMenuItem});
+            this.toolsToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(1018, 24);

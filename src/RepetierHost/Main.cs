@@ -1388,6 +1388,8 @@ namespace RepetierHost
 
 
         static bool firstSizeCall = true;
+        private BeltCalculatorDialog beltCalculator;
+
         private void Main_SizeChanged(object sender, EventArgs e)
         {
             if(firstSizeCall) {
@@ -1427,9 +1429,19 @@ namespace RepetierHost
 
         private void beltCalculatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var beltCalculator = new BeltCalculator();
+            if (beltCalculator == null)
+            {
+                beltCalculator = new BeltCalculatorDialog();
+            }
+
+            if (beltCalculator.Visible)
+            {
+                beltCalculator.BringToFront();
+                return;
+            }
 
             beltCalculator.Show();
+            beltCalculator.Visible = true;
         }
 
         private void printerToolStripMenuItem_Click(object sender, EventArgs e)
