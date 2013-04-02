@@ -274,6 +274,7 @@ namespace RepetierHost
             tempView = new TemperatureView();
             tempView.Dock = DockStyle.Fill;
             tabPageTemp.Controls.Add(tempView);
+
             if (IsMono)
             {
                 showWorkdirectoryToolStripMenuItem.Visible = false;
@@ -321,6 +322,7 @@ namespace RepetierHost
             slicerToolStripMenuItem.Text = Trans.T("M_SLICER");
             printerToolStripMenuItem.Text = Trans.T("M_PRINTER");
             temperatureToolStripMenuItem.Text = Trans.T("M_TEMPERATURE");
+            toolsToolStripMenuItem.Text = Trans.T("M_TOOLS");
             helpToolStripMenuItem.Text = Trans.T("M_HELP");
             loadGCodeToolStripMenuItem.Text = Trans.T("M_LOAD_GCODE");
             showWorkdirectoryToolStripMenuItem.Text = Trans.T("M_SHOW_WORKDIRECTORY");
@@ -1416,6 +1418,23 @@ namespace RepetierHost
         private void toolAction_Click(object sender, EventArgs e)
         {
             conn.job.etaModeNormal = !conn.job.etaModeNormal;
+        }
+
+        private void motorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void beltCalculatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var beltCalculator = new BeltCalculator();
+
+            beltCalculator.Show();
+        }
+
+        private void printerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
 

@@ -5,6 +5,7 @@
 <t id="M_SLICER" ver="1">Slicer</t>
 <t id="M_TEMPERATURE" ver="1">Temperature</t>
 <t id="M_PRINTER" ver="1">Printer</t>
+<t id="M_TOOLS" ver="1">Tools</t>
 <t id="M_HELP" ver="1">Help</t>
 <t id="M_LOAD_GCODE" ver="1">Load G-Code</t>
 <t id="M_SHOW_WORKDIRECTORY" ver="1">Show Work Directory</t>
