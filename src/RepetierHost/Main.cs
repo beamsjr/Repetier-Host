@@ -1389,6 +1389,7 @@ namespace RepetierHost
 
         static bool firstSizeCall = true;
         private BeltCalculatorDialog beltCalculator;
+        private LeadScrewCalculatorDialog leadScrewCalculator;
 
         private void Main_SizeChanged(object sender, EventArgs e)
         {
@@ -1424,7 +1425,19 @@ namespace RepetierHost
 
         private void motorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (leadScrewCalculator == null)
+            {
+                leadScrewCalculator = new LeadScrewCalculatorDialog();
+            }
 
+            if (leadScrewCalculator.Visible)
+            {
+                leadScrewCalculator.BringToFront();
+                return;
+            }
+
+            leadScrewCalculator.Show();
+            leadScrewCalculator.Visible = true;
         }
 
         private void beltCalculatorToolStripMenuItem_Click(object sender, EventArgs e)

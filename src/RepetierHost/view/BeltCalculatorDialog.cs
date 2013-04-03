@@ -55,7 +55,7 @@ namespace RepetierHost.view
             var result = beltCalculator.Calculate();
                 
 
-            StepsPerMMOutput.Text = Math.Round(result, 4).ToString(CultureInfo.InvariantCulture);
+            StepsPerMMOutput.Text = result.ToString(CultureInfo.InvariantCulture);
         }
     }
 }
