@@ -115,7 +115,6 @@
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.motorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.beltCalculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tweakingCalculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.status = new System.Windows.Forms.StatusStrip();
             this.toolConnection = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTempReading = new System.Windows.Forms.ToolStripStatusLabel();
@@ -836,8 +835,7 @@
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.motorToolStripMenuItem,
-            this.beltCalculatorToolStripMenuItem,
-            this.tweakingCalculatorToolStripMenuItem});
+            this.beltCalculatorToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.toolsToolStripMenuItem.Text = "T&ools";
@@ -855,12 +853,6 @@
             this.beltCalculatorToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.beltCalculatorToolStripMenuItem.Text = "Belt Calculator";
             this.beltCalculatorToolStripMenuItem.Click += new System.EventHandler(this.beltCalculatorToolStripMenuItem_Click);
-            // 
-            // tweakingCalculatorToolStripMenuItem
-            // 
-            this.tweakingCalculatorToolStripMenuItem.Name = "tweakingCalculatorToolStripMenuItem";
-            this.tweakingCalculatorToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.tweakingCalculatorToolStripMenuItem.Text = "Tweaking Calculator";
             // 
             // status
             // 
@@ -1382,7 +1374,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem motorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem beltCalculatorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tweakingCalculatorToolStripMenuItem;
     }
 }
 
